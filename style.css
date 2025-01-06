@@ -68,3 +68,16 @@ h6 {
 #__next {
 	isolation: isolate;
 }
+
+/* Layout */
+body {
+	display: flex;
+	align-items: center;
+	min-height: 100dvh;
+}
+
+.aside {
+	min-width: 535px;
+}
+
+/* Styles */
