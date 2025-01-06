@@ -98,6 +98,11 @@ body {
 }
 
 /* Styles */
+body {
+	font-family: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+		"Helvetica Neue", sans-serif;
+}
+
 .aside {
 	background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
 	background-position: 50%;
