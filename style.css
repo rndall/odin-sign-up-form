@@ -69,15 +69,62 @@ h6 {
 	isolation: isolate;
 }
 
+/* Custom Properties */
+:root {
+	--aside-color: white;
+}
+
 /* Layout */
 body {
 	display: flex;
-	align-items: center;
 	min-height: 100dvh;
 }
 
 .aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	min-width: 535px;
 }
 
+.aside__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	align-self: center;
+}
+
 /* Styles */
+.aside {
+	background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+	background-position: 50%;
+	background-size: cover;
+	color: var(--aside-color);
+	text-align: center;
+}
+
+.aside__container {
+	padding: 8px;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-top: 215px;
+}
+
+.aside__image {
+	width: 100px;
+}
+
+.aside__title {
+	font-family: "norsebold", serif;
+	font-size: 6rem;
+}
+
+.aside__paragraph {
+	margin-bottom: 12px;
+}
+
+.aside__link {
+	color: inherit;
+}
