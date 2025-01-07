@@ -130,6 +130,6 @@ body {
 	margin-bottom: 12px;
 }
 
-.aside__link {
+.aside__link--inherit {
 	color: inherit;
 }
