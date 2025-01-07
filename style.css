@@ -192,6 +192,7 @@ body {
 	flex-direction: column;
 	gap: 20px;
 	padding-block: 16px 32px;
+	margin-top: 32px;
 }
 
 .form__group {
@@ -232,4 +233,5 @@ body {
 
 .form__button {
 	align-self: flex-start;
+	margin-bottom: 10px;
 }
