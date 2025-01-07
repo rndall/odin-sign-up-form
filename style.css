@@ -75,6 +75,8 @@ h6 {
 	--main-inline-spacing: 48px;
 	--color-primary: #596d48;
 	--input-border-color: #e5e7eb;
+	--input-border-invalid: hsl(0, 100%, 40%);
+	--input-border-focus: blue;
 }
 
 /* Layout */
@@ -216,6 +218,16 @@ body {
 	border-radius: 4px;
 	font-size: 1rem;
 	padding-inline: 8px;
+}
+
+.form__input:focus {
+	outline: none;
+	border: 1px solid var(--input-border-focus);
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form__input:invalid {
+	border: 1px solid var(--input-border-invalid);
 }
 
 .form__button {
