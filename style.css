@@ -72,6 +72,8 @@ h6 {
 /* Custom Properties */
 :root {
 	--aside-color: white;
+	--main-margin-inline: 36px;
+	--color-primary: #596d48;
 }
 
 /* Layout */
@@ -132,4 +134,40 @@ body {
 
 .aside__link--inherit {
 	color: inherit;
+}
+
+.main__container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.main__paragraph {
+	margin-inline: var(--main-margin-inline);
+}
+
+.main__paragraph--semi-bold {
+	font-weight: 600;
+}
+
+.main__paragraph--2xl {
+	font-size: 1.5rem;
+}
+
+.main__paragraph--large {
+	font-size: 1.125rem;
+}
+
+.button {
+	color: white;
+	background-color: var(--color-primary);
+	border: none;
+	border-radius: 8px;
+	font-weight: 700;
+	font-size: 1.125rem;
+	padding: 10px 56px;
+}
+
+.main__button {
+	margin-inline: var(--main-margin-inline);
 }
