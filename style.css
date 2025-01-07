@@ -104,6 +104,7 @@ body {
 body {
 	font-family: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
 		"Helvetica Neue", sans-serif;
+	background-color: hsl(0, 0%, 97%);
 }
 
 .aside {
@@ -137,14 +138,14 @@ body {
 	color: inherit;
 }
 
-.main__container {
+.main {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
 
 .main__paragraph {
-	margin-inline: var(--main-inline-spacing);
+	margin-inline: var(--main-inline-spacing) 25%;
 }
 
 .main__paragraph--semi-bold {
@@ -167,26 +168,51 @@ body {
 	font-weight: 700;
 	font-size: 1.125rem;
 	padding: 10px 56px;
+	margin-inline: var(--main-inline-spacing);
 }
 
 .form {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.form__container {
 	padding-inline: var(--main-inline-spacing);
+	background-color: #fff;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-block: 16px 32px;
 }
 
 .form__group {
 	display: flex;
+	gap: 64px;
+}
+
+.form__title {
+	font-weight: 600;
 }
 
 .form__label {
 	display: block;
 	text-transform: uppercase;
-	letter-spacing: .05em;
-	font-size: .875rem;
+	letter-spacing: .1em;
+	font-size: .75rem;
+	font-weight: 600;
 }
 
 .form__input {
-	width: 150px;
+	width: 225px;
 	display: block;
 	border: 1px solid #e5e7eb;
 	border-radius: 4px;
+	font-size: 1rem;
+	padding-inline: 8px;
+}
+
+.form__button {
+	align-self: flex-start;
 }
