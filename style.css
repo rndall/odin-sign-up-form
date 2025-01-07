@@ -72,8 +72,9 @@ h6 {
 /* Custom Properties */
 :root {
 	--aside-color: white;
-	--main-margin-inline: 36px;
+	--main-inline-spacing: 48px;
 	--color-primary: #596d48;
+	--input-border-color: #e5e7eb;
 }
 
 /* Layout */
@@ -143,7 +144,7 @@ body {
 }
 
 .main__paragraph {
-	margin-inline: var(--main-margin-inline);
+	margin-inline: var(--main-inline-spacing);
 }
 
 .main__paragraph--semi-bold {
@@ -168,6 +169,24 @@ body {
 	padding: 10px 56px;
 }
 
-.main__button {
-	margin-inline: var(--main-margin-inline);
+.form {
+	padding-inline: var(--main-inline-spacing);
+}
+
+.form__group {
+	display: flex;
+}
+
+.form__label {
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-size: .875rem;
+}
+
+.form__input {
+	width: 150px;
+	display: block;
+	border: 1px solid #e5e7eb;
+	border-radius: 4px;
 }

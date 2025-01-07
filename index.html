@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
@@ -46,33 +46,61 @@
         </p>
       </div>
 
-      <form action="" method="get">
+      <form class="form" action="" method="get">
         <div>
-          <h2>Let's do this!</h2>
+          <h2 class="form__title">Let's do this!</h2>
 
-          <label for="first_name"
-            >First Name <input type="text" id="first_name" name="first_name"
-          /></label>
-          <label for="last_name"
-            >Last Name <input type="text" id="last_name" name="last_name"
-          /></label>
-          <label for="email"
-            >Email <input type="email" id="email" name="email"
-          /></label>
-          <label for="phone_number"
-            >Phone Number
-            <input type="tel" id="phone_number" name="phone_number"
-          /></label>
-          <label for="pwd"
-            >Password <input type="password" id="pwd" name="pwd"
-          /></label>
-          <label for="confirm_pwd"
-            >Confirm Password
-            <input type="password" id="confirm_pwd" name="confirm_pwd"
-          /></label>
+          <div class="form__group">
+            <label class="form__label" for="first_name"
+              >First Name
+              <input
+                class="form__input"
+                type="text"
+                id="first_name"
+                name="first_name"
+            /></label>
+            <label class="form__label" for="last_name"
+              >Last Name
+              <input
+                class="form__input"
+                type="text"
+                id="last_name"
+                name="last_name"
+            /></label>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="email"
+              >Email
+              <input class="form__input" type="email" id="email" name="email"
+            /></label>
+            <label class="form__label" for="phone_number"
+              >Phone Number
+              <input
+                class="form__input"
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+            /></label>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="pwd"
+              >Password
+              <input class="form__input" type="password" id="pwd" name="pwd"
+            /></label>
+            <label class="form__label" for="confirm_pwd"
+              >Confirm Password
+              <input
+                class="form__input"
+                type="password"
+                id="confirm_pwd"
+                name="confirm_pwd"
+            /></label>
+          </div>
         </div>
 
-        <button class="main__button button">Create Account</button>
+        <button class="form__button button">Create Account</button>
       </form>
 
       <p class="main__paragraph main__paragraph--large">
