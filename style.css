@@ -160,6 +160,11 @@ body {
 	font-size: 1.125rem;
 }
 
+.main__link {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
 .button {
 	color: white;
 	background-color: var(--color-primary);
