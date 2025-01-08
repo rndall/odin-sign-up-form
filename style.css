@@ -77,6 +77,8 @@ h6 {
 	--input-border-color: #e5e7eb;
 	--input-border-invalid: hsl(0, 100%, 40%);
 	--input-border-focus: blue;
+	--button-hover-color: hsl(92, 20%, 38%);
+	--button-active-color: hsl(92, 20%, 30%);
 }
 
 /* Layout */
@@ -234,4 +236,14 @@ body {
 .form__button {
 	align-self: flex-start;
 	margin-bottom: 10px;
+}
+
+.form__button:hover {
+	cursor: pointer;
+	background-color: var(--button-hover-color);
+	transition: background-color .1s ease-in-out;
+}
+
+.form__button:active {
+	background-color: var(--button-active-color);
 }
